@@ -8,11 +8,11 @@ public class CoordinatePane {
             if (y > 0 ){
                 System.out.println("first");
             }else System.out.println("fourth");
-        }else {
+        }else if (x != 0 && y != 0){
             if (y > 0){
                 System.out.println("second");
             }else System.out.println("third");
-        }
+        }else System.out.println("zero");
     }
 
 }

@@ -5,7 +5,7 @@ public class DaysInMonth {
     public void printDays(int year, int month) {
         int daysInMonth;
 
-        if (year > 0) {
+        if (year > 0 && month <= 12) {
             if (year % 4 == 0 && year % 100 != 0) {
                 daysInMonth = switch (month) {
                     case 1, 3, 5, 7, 8, 10, 12 -> 31;
